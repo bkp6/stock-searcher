@@ -28,7 +28,7 @@ button{cursor:pointer;font-family:inherit;border:none;-webkit-appearance:none;}
 .spin{display:inline-block;animation:spin 1s linear infinite;}@keyframes spin{to{transform:rotate(360deg)}}
 @keyframes fadeIn{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
 #app{padding:16px;max-width:430px;margin:0 auto;padding-top:80px;padding-bottom:40px;}
-#header{top:0;left:0;right:0;padding:calc(env(safe-area-inset-top,16px)+16px) 20px 14px;background:rgba(0,0,0,.98);z-index:50;max-width:430px;margin:0 auto;}
+#header{top:0;left:0;right:0;padding:calc(env(safe-area-inset-top,8px)+6px) 20px 10px;background:rgba(0,0,0,.98);z-index:50;max-width:430px;margin:0 auto;}
 #toast{position:fixed;top:calc(env(safe-area-inset-top,44px)+70px);left:50%;transform:translateX(-50%);background:var(--bg3);color:var(--text);padding:10px 20px;border-radius:20px;font-size:14px;z-index:300;display:none;white-space:nowrap;border:1px solid var(--border);}
 </style>
 </head>
@@ -43,7 +43,7 @@ button{cursor:pointer;font-family:inherit;border:none;-webkit-appearance:none;}
 <div id="app">
   <!-- Search input -->
   <div style="position:relative;margin-bottom:10px">
-    <input id="sq-input" placeholder="輸入股票代號，例：2330、0056" style="padding-right:80px;font-size:15px;margin-top:-200px" oninput="sqAutocomplete()" onkeydown="if(event.key==='Enter')sqSearch()">
+    <input id="sq-input" placeholder="輸入股票代號，例：2330、0056" style="padding-right:80px;font-size:15px;margin-top:-10px" oninput="sqAutocomplete()" onkeydown="if(event.key==='Enter')sqSearch()">
     <button onclick="sqSearch()" style="position:absolute;right:4px;top:50%;transform:translateY(-50%);background:var(--blue);color:#fff;border:none;border-radius:8px;padding:8px 14px;font-size:13px;font-weight:700;font-family:inherit;cursor:pointer">查詢</button>
     <div id="sq-ac" style="display:none;position:absolute;left:0;right:0;top:calc(100% + 4px);background:var(--bg3);border:1px solid var(--border);border-radius:10px;z-index:10;max-height:200px;overflow-y:auto"></div>
   </div>
