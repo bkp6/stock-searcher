@@ -95,7 +95,7 @@ button{cursor:pointer;font-family:inherit;border:none;-webkit-appearance:none;}
 <!-- DASHBOARD -->
 <div class="page active" id="page-dashboard">
   <div class="card" style="background:linear-gradient(135deg,#0a84ff18,#30d15818);border:1px solid #0a84ff33">
-    <div style="font-size:13px;color:var(--text3);margin-bottom:4px">持股市值</div>
+    
     <div class="mono" id="d-mkt" style="font-size:38px;font-weight:900">$0</div>
     <div style="display:flex;gap:20px;margin-top:10px;flex-wrap:wrap">
   </div>
@@ -121,11 +121,6 @@ button{cursor:pointer;font-family:inherit;border:none;-webkit-appearance:none;}
 <!-- HOLDINGS -->
 <div class="page" id="page-holdings">
   <div class="row" style="margin-bottom:12px">
-    <div style="font-size:22px;font-weight:900">我的持股</div>
-    <div style="display:flex;gap:8px">
-      <button class="btn-sm btn-blue" onclick="queryDivOnly()" id="div-btn" style="color:#fff">↻ 更新配息</button>
-      <button class="btn-sm btn-blue" onclick="openModal('addHolding')" style="color:#fff">＋ 新增</button>
-    </div>
   </div>
   <!-- Slider card container -->
   <div class="slider-wrap" id="pie-scene" style="display:none">
