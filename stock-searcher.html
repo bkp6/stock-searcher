@@ -54,7 +54,7 @@ button{cursor:pointer;font-family:inherit;border:none;-webkit-appearance:none;}
 <script>
 // ── 股票代號對照中文名稱 ──────────────────────────────────────────────────────
 // 可在此新增更多代號，格式：'代號': '中文名稱'
-const TW_NAMES = {
+/*const TW_NAMES = {
   '0050': '元大台灣50',
   '00919': '群益台灣精選高息',
   '2330': '台積電',
@@ -63,7 +63,7 @@ const TW_NAMES = {
 function lookupName(code) {
   return TW_NAMES[code.toUpperCase()] || null;
 }
-
+*/
 // ── CORS Proxy ────────────────────────────────────────────────────────────────
 const PROXIES = [
   u => 'https://corsproxy.io/?' + encodeURIComponent(u),
