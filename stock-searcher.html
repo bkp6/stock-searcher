@@ -53,8 +53,6 @@ button{cursor:pointer;font-family:inherit;border:none;-webkit-appearance:none;}
 </div>
 
 <script>
-// ── 股票代號對照中文名稱 ──────────────────────────────────────────────────────
-// 可在此新增更多代號，格式：'代號': '中文名稱'
 
 // ── CORS Proxy ────────────────────────────────────────────────────────────────
 const PROXIES = [
@@ -84,7 +82,7 @@ function toast(msg) { const t = document.getElementById('toast'); t.textContent 
 // ── Search state ──────────────────────────────────────────────────────────────
 let sqSearching = false;
 let sqState = { sym: '', meta: null, allPoints: {}, divHistory: [], divMonths: [], name: '', code: '', range: '1mo' };
-const SQ_RANGES = [{ k: '1wk', l: '1週' }, { k: '1mo', l: '1月' }, { k: '3mo', l: '3月' }, { k: '6mo', l: '6月' }, { k: '1y', l: '1年' }];
+const SQ_RANGES = [ { k: '1mo', l: '1月' }, { k: '3mo', l: '3月' }, { k: '6mo', l: '6月' }, { k: '1y', l: '1年' }];
 
 // ── Autocomplete ──────────────────────────────────────────────────────────────
 function sqAutocomplete() {
